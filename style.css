@@ -139,6 +139,10 @@ section {
     height: 100vh;
     width: 100%;
 }
+h6{
+    visibility: hidden;
+    position: absolute;
+}
 
 /* Pour la présentation */
 #presentation{
@@ -577,7 +581,7 @@ text-align: center;
 
 footer{
     width: 100%;
-    height: 10%;
+    height: 10vh;
     background: rgb(60, 44, 36);
     border-top-right-radius: 10%;
     display: flex;
@@ -745,7 +749,7 @@ text-align: center;
 
 .footer-mp{
     width: 100%;
-    height: 10%;
+    height: 10vh;
     background: rgb(29, 29, 27);
     border-top-right-radius: 10%;
     display: flex;
