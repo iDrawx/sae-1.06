@@ -1,0 +1,875 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: appair 1s;
+    font-weight: bold;
+}
+body {
+    background-color: white;
+}
+/* Première page (index) */
+
+.fond-principal{
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    font-size: 2vw;
+    color:black;
+}
+#logo-iut{
+    position: absolute;
+    width: 10%;
+    left: 2%;
+    top: 2%;
+}
+
+.bloc1-index{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px grey;
+}
+
+.bloc2-index{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+}
+.entreprise{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.entreprise a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px grey;
+}
+.entreprise a:hover ~ #underline1{
+    width: 22%;
+}
+#logo-naio-index{
+    top: 26%;
+    position: absolute;
+    width: 20%;
+}
+#logo-micropep-index{
+    top: 28%;
+    position: absolute;
+    width: 12%;
+}
+#underline1{
+    margin-top: 4%;
+    width: 0%;
+    height: 0.5%;
+    position: absolute;
+    background: black;
+    box-shadow: 5px 5px 5px grey;
+    transition-duration: 1s;
+}
+.entreprise p{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5vw;
+    position: absolute;
+    margin-top: 8%;
+}
+
+.bloc3-index{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+}
+.bloc3-index a{
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 5px 5px 5px grey;
+    transition-duration: 0.5s;
+}
+.bloc3-index a:hover{
+    background-color:rgba(0, 0, 0, 0.685);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-shadow: none;
+}
+
+.bloc4-index{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : white;
+    font-size: 1.2vw;
+}
+
+/* Page pour naio */
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Pour la présentation */
+#presentation{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color:rgb(60, 44, 36);
+    border-bottom-left-radius: 10%;
+}
+.presentation-fond{
+    position: absolute;
+    background-color: rgb(60, 44, 36);
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+#retour a{
+    position: absolute;
+    top :1%;
+    left: 2%;
+    color : rgb(60, 44, 36);
+    font-size: 2vw;
+    transition-duration: 0.2s;
+    z-index: 1;
+}
+
+#retour a:hover{
+    text-shadow: 3px 3px 3px orange;
+}
+
+
+h2{
+    color: rgb(149, 190, 11);
+    font-style: italic;
+}
+.bloc1{
+    position:absolute;
+    top: 0;
+    height: 33%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.text1 {
+    position: relative;
+    margin-left: 4%;
+    font-size: 2vw;
+    width: 70%;
+}
+.text1 h2 {
+    text-align: center;
+}
+#logo-naio {
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    width: 20%;
+}
+#logo-micropep {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 15%;
+}
+
+.bloc2{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+.text2 {
+    position: relative;
+    margin-left: 26%;
+    font-size: 2vw;
+    width: 70%;
+}
+#logo-monde {
+    position: absolute;
+    width: 20%;
+    bottom: 26%;
+    left: 1%;
+}
+.bloc3{
+    position: absolute;
+    bottom: 0;
+    height: 33%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.text3 {
+    position: relative;
+    margin-left: 4%;
+    font-size: 2vw;
+    width: 70%;
+}
+
+/* Pour le modèle économique */
+
+#modele-economique{
+    background-color: rgb(60, 44, 36);
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8vw;
+}
+h3 {
+    font-size: 4vw;
+    width: 35%;
+    color: rgb(149, 190, 11);
+}
+#text-activite {
+    position: relative;
+    left: 15%;
+}
+#text-marchande {
+    position: relative;
+    left: 30%;
+}
+.barre{
+    position: absolute;
+    left: 0%;
+    background-color: white;
+    width: 34%;
+    height: 1%;
+}
+.bloc1-economique{
+    position: absolute;
+    width: 100%;
+    height : 36%;
+    top: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+.bloc1-economique p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+.bloc1-economique ul{
+    text-align: left;
+    padding-left: 5%;
+}
+
+
+.bloc2-economique{
+    position: absolute;
+    right: 0;
+    width: 34%;
+    height : 26%;
+    margin-right: 1%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.bloc3-economique{
+    position: absolute;
+    width: 100%;
+    height : 30%;
+    bottom: -100%;
+    display: flex;
+    align-items: center;
+}
+.bloc3-economique ul{
+    padding-left: 2%;
+}
+.bloc4-economique{
+    position: absolute;
+    width: 40%;
+    height : 10%;
+    bottom: -68%;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.bloc4-economique p{
+    padding-left: 15%;
+}
+
+/* Chaines valeurs */
+.chaines-valeurs-fond{
+    position: absolute;
+    top: 200vh;
+    height: 100vh;
+    width: 100%;
+    background: rgb(60, 44, 36);
+    z-index: -1;
+}
+
+#chaines-valeurs{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background: white;
+    font-size: 1.8vw;
+    color: rgb(60, 44, 36)
+}
+
+.bloc1-chaines{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;    
+}
+#robot {
+    position: absolute;
+    right: 5%;
+    padding-top: 15%;
+    width: 30%;
+}
+.bloc1-chaines h4{
+    position: absolute;
+    right: 0;
+    padding-bottom: 10%;
+    font-size: 3vw;
+    padding-right: 5%;
+    color:rgb(149, 190, 11)
+}
+.bloc1-chaines p {
+    position: absolute;
+    width: 60%;
+    padding-left: 3%;
+    padding-top: 12%;
+}
+
+.bloc2-chaines{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.bloc2-chaines p {
+    position: absolute;
+    right: 0;
+    padding-right: 2%;
+    text-align: right;
+    width: 55%;
+}
+
+
+
+
+
+/* Forces de porter */
+#forces-porter{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background: rgb(60, 44, 36);
+    font-size: 1.8vw;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.bloc1-porter{
+    position: absolute;
+    top : 300vh;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+}
+.p1-porter{
+    position: absolute;
+    width:75%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.p2-porter{
+    position: absolute;
+    width: 75%;
+    padding-top: 15%;
+    right: 3%;
+    text-align: center;
+}
+
+.bloc2-porter{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+}
+.bloc2-porter h4{
+font-size: 3vw;
+padding-left: 3%;
+color:rgb(149, 190, 11);
+text-align: center;
+}
+.p3-porter{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    text-align: center;
+}
+
+
+.bloc3-porter{
+    position: absolute;
+    bottom: -300vh;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+}
+.p4-porter{
+    position: absolute;
+    width: 75%;
+    padding-bottom: 15%;
+    right: 3%;
+    text-align: center;
+
+}
+.p5-porter{
+    position: absolute;
+    width:75%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Analyse pestel */
+
+.analyse-pestel-fond {
+    position: absolute;
+    top: 400vh;
+    height: 100vh;
+    width: 100%;
+    background: rgb(60, 44, 36);
+    z-index: -1;
+}
+#analyse-pestel{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background: white;
+    font-size: 1.5vw;
+    color: rgb(60, 44, 36);
+}
+#analyse-pestel a {
+    color: rgb(149, 190, 11);
+}
+.blocTitre-pestel{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vw;
+    color: rgb(149, 190, 11);
+}
+.bloc1-pestel{
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.bloc2-pestel{
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin-left: 28%;
+}
+.bloc3-pestel{
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+.bloc4-pestel{
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin-left: 28%;
+}
+.bloc5-pestel{
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+.bloc6-pestel{
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    text-align:  right;
+    margin-left: 28%;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 10%;
+    background: rgb(60, 44, 36);
+    border-top-right-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+footer a{
+    color: white;
+    transition-duration: 0.3s;
+}
+footer a:hover{
+    color: orange;
+}
+
+
+
+
+/* Page pour micropep */
+/* Pour la présentation */
+#presentation-mp{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color:rgb(29, 29, 27);
+    border-bottom-left-radius: 10%;
+}
+.presentation-mp-fond{
+    position: absolute;
+    background-color: rgb(29, 29, 27);
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+#retour-mp a{
+    position: absolute;
+    top :1%;
+    left: 2%;
+    color : rgb(29, 29, 27);
+    font-size: 2vw;
+    transition-duration: 0.2s;
+    z-index: 1;
+}
+
+#retour-mp a:hover{
+    text-shadow: 3px 3px 3px orange;
+}
+
+
+#mp-h2{
+    color: rgb(0, 157, 69);
+    font-style: italic;
+    font-size : 3vw;
+}
+.text1 #mp-h2{
+    text-align: center;
+}
+
+#logo-micropep {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 14%;
+}
+
+/* Pour le modèle économique */
+
+#modele-economique-mp{
+    background-color: rgb(29, 29, 27);
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8vw;
+}
+#mp-h3 {
+    font-size: 4vw;
+    width: 35%;
+    color: rgb(0, 157, 69);
+}
+
+/* Chaines valeurs */
+.chaines-valeurs-mp-fond{
+    position: absolute;
+    top: 200vh;
+    height: 100vh;
+    width: 100%;
+    background: rgb(29, 29, 27);
+    z-index: -1;
+}
+
+#chaines-valeurs-mp{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background: white;
+    font-size: 1.8vw;
+    color: rgb(29, 29, 27)
+}
+
+.bloc1-chaines #mp-h4{
+    position: absolute;
+    right: 0;
+    padding-bottom: 10%;
+    font-size: 3vw;
+    padding-right: 5%;
+    color:rgb(0, 157, 69)
+}
+
+
+
+/* Forces de porter */
+#forces-porter-mp{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background: rgb(29, 29, 27);
+    font-size: 1.8vw;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.bloc2-porter #mp-h4{
+font-size: 3vw;
+padding-left: 3%;
+color:rgb(0, 157, 69);
+text-align: center;
+}
+
+
+
+/* Analyse pestel */
+
+.analyse-pestel-mp-fond {
+    position: absolute;
+    top: 400vh;
+    height: 100vh;
+    width: 100%;
+    background: rgb(29, 29, 27);
+    z-index: -1;
+}
+#analyse-pestel-mp{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background: white;
+    font-size: 1.5vw;
+    color: rgb(29, 29, 27);
+}
+#analyse-pestel-mp a {
+    color: rgb(0, 157, 69);
+}
+.blocTitre-pestel-mp{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vw;
+    color: rgb(0, 157, 69);
+}
+
+/* Footer */
+
+.footer-mp{
+    width: 100%;
+    height: 10%;
+    background: rgb(29, 29, 27);
+    border-top-right-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+.footer-mp a{
+    color: white;
+    transition-duration: 0.3s;
+}
+.footer-mp a:hover{
+    color: orange;
+}
+
+/* Pour la comparaison */
+h5 {
+    width: 100%;
+    height: 10vh;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h5 p{
+    background: grey;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+}
+#tab, #conclusion{
+    background: orange;
+}
+.Titre{
+    width: 100%;
+    font-size: 2.5vw;
+    height: 20vh;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 3px 3px grey;
+
+}
+.tableau {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tableau{
+    width: 35%;
+}
+.plan-politique{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.plan-politique p{
+    width: 80%;
+}
+
+.plan-economique{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.plan-economique p{
+    width: 80%;
+}
+
+.plan-sociologique{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.plan-sociologique p{
+    width: 80%;
+}
+
+.plan-technologique{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.plan-technologique p{
+    width: 80%;
+}
+
+.plan-ecologique{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.plan-ecologique p{
+    width: 80%;
+}
+
+.conclusion{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.conclusion p{
+    width: 80%;
+}
+
+
+@keyframes appair {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
