@@ -766,7 +766,7 @@ text-align: center;
 }
 
 /* Pour la comparaison */
-h5 {
+.h5-1, .h5-2, .h5-3, .h5-4, .h5-5, .h5-6, .h5-7 {
     width: 100%;
     height: 10vh;
     font-size: 2vw;
@@ -774,7 +774,7 @@ h5 {
     align-items: center;
     justify-content: center;
 }
-h5 p{
+.h5-1 p, .h5-2 p, .h5-3 p, .h5-4 p, .h5-5 p, .h5-6 p, .h5-7 p{
     background: grey;
     width: 60%;
     text-align: center;
